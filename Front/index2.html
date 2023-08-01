@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Çiz ve düzenle</title>
+    <link rel="stylesheet" href="node_modules/ol/ol/css">
+    <style>
+        .map {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="map" class="map"></div>
+
+    <form>
+        <label for="type">Geometri tipi &nbsp;</label>
+        <select id="type">
+            <option value="Point">Nokta</option>
+            <option value="LineString">Çizgi</option>
+            <option value="Polygon">Köşeli </option>
+            <option value="Circle">Yuvarlak</option>
+
+        </select>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
